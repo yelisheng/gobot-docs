@@ -1,0 +1,14 @@
+
+1、安装nodejs
+2、安装python
+3、opencv复制到c盘
+4、设置环境变量: path增加 C:\OpenCV\build\x64\vc12\bin;
+5、workspace解压到D盘
+6、执行脚本D:\workspace\restart.bat 
+7、安装鼠标键盘驱动（如果系统已经安装驱动的，请替换C:\Windows\System32\drivers\KeyMouse_x64.sys文件） 
+8、cd D:/workspace/drivercliproxy 执行 命令 node ./src/web
+
+其他问题
+1、gm部署问题（图片服务器）
+GraphicsMagick-1.3.25需要make install(拷贝服务器上文件可以省去编译)
+/etc/profile 中增加 export PATH=/usr/local/node-v7.9.0-linux-x64/bin:/usr/local/mongodb/bin:/usr/local/GraphicsMagick-1.3.25/bin:$PATH
